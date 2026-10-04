@@ -1,73 +1,44 @@
-# React + TypeScript + Vite
+# Glyph Studio 🎓
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Glyph Studio** es una plataforma educativa interactiva diseñada para que las personas aprendan sobre diferentes temas de manera sencilla, clara y accesible. Destaca por funcionar completamente sin base de datos externa, lo que garantiza una carga instantánea y la posibilidad de uso offline.
 
-Currently, two official plugins are available:
+## 🚀 Funcionalidades Destacadas
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+-  **Contenido Estructurado:** Cursos organizados por temas y niveles de dificultad (principiante a avanzado).
+- 🧭 **Navegación Intuitiva:** Interfaz amigable pensada para maximizar la experiencia de aprendizaje (UX).
+- 📱 **Diseño Responsivo:** Totalmente accesible y adaptativo desde PC, tablet o móvil.
+- 🎬 **Lecciones Interactivas:** Contenido multimedia con videos, imágenes, ejemplos prácticos y ejercicios.
+-  **Seguimiento de Progreso:** Sistema que permite a los usuarios ver su avance en cada curso utilizando `Local Storage`.
+- 💡 **Explicaciones Claras:** Contenido redactado de forma sencilla, evitando tecnicismos innecesarios.
+- ⚡ **100% Offline & Rápido:** Al no depender de bases de datos externas, todo el contenido está integrado, permitiendo un funcionamiento offline y una velocidad de carga óptima.
 
-## React Compiler
+## 🛠️ Stack Tecnológico
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Construido con tecnologías modernas de desarrollo frontend para garantizar rendimiento y mantenibilidad:
 
-## Expanding the ESLint configuration
+- **Core:** React 18 · TypeScript
+- **Build Tool:** Vite
+- **Estilos:** Tailwind CSS
+- **Animaciones:** Framer Motion
+- **Enrutamiento:** React Router DOM
+- **Datos y Estado:** Local Storage API · JSON
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 📂 Estructura de Contenido
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+La plataforma está diseñada para albergar cursos sobre múltiples áreas de conocimiento:
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+- 💻 **Tecnología:** Programación, desarrollo web, bases de datos, ciberseguridad, IA.
+-  **Diseño:** UI/UX, diseño gráfico, ilustración digital, animación.
+-  **Negocios:** Marketing digital, emprendimiento, finanzas, gestión de proyectos.
+- 🎮 **Videojuegos:** Desarrollo de juegos, game design, motores de juego.
+- 🖌️ **Arte y Creatividad:** Música, escritura, fotografía, artes visuales.
+- 🌱 **Desarrollo Personal:** Productividad, comunicación, liderazgo, bienestar.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 💻 Cómo ejecutar el proyecto en local
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Sigue estos pasos para levantar el entorno de desarrollo:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+1. **Clona el repositorio:**
+   ```bash
+   git clone https://github.com/kaigallardo/GlyphStudio.git
+   cd GlyphStudio
