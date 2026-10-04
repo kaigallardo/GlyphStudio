@@ -31,7 +31,7 @@ export default function Footer() {
 
             {/* GitHub */}
             <a
-              href="https://github.com/KaiGlyph"
+              href="https://github.com/kaigallardo"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="GitHub"
@@ -44,7 +44,7 @@ export default function Footer() {
 
             {/* LinkedIn */}
             <a
-              href="https://linkedin.com/in/jordi-gallardo-sanchez"
+              href="https://www.linkedin.com/in/kai-gallardo-sánchez-b63a62440"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="LinkedIn"
@@ -57,7 +57,7 @@ export default function Footer() {
 
             {/* Email */}
             <a
-              href="mailto:jordigallardo0621@gmail.com"
+              href="mailto:kaigallardosanchez@gmail.com"
               aria-label="Email"
               className="footer-social-link"
             >
